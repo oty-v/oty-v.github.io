@@ -7,9 +7,10 @@
 html { 
     font-size: 100%; 
 }
-a {
+a, a:active {
     text-decoration: none;
 }
+
 ::-webkit-scrollbar-button {
 background-repeat:no-repeat;
 width:1px;
