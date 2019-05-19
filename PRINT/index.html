@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+  	<title>PRINT от y_v</title>
+  	<meta content="Mikhail Ostrovsky" name="Author">
+  	<meta content="oty998@gmail.com" name="Reply-to">
+  	<meta content="website" property="type">
+  	<meta content="" name="description">
+  	<meta content="" name="Keywords">
+  	<link href="img/icons8-filled-90.png" rel="icon" type="image/png">
+  	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+  	<link href="css/main.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div class="first">
+    </div>
+       <header>
+       <div class="author"><span>oty_v</span><br>Дизайнер</div>
+        <h1>Магазин одежды oty_v</h1>
+        <a class="manufacturer" href="https://printbar.ru/?referrals=id_27087" target="_blank"><span>PRINT BAR</span><br>Производитель</a>
+        </header>
+		<div class="stamp-icon-item">
+			<p class="stamp-icon-text">Created in<br>Japanese style</p>
+			<img class="stamp-icon-img tap" @click="document.documentElement.scrollTop = 0" src="img/icons8-filled-90.png">
+		</div>
+        <hr class="top-lin">
+        <div class="slider">
+        <div class="slide-elm top-icon-item">
+			<img class="top-icon-img" src="img/top-leybl.png">
+        <p class="top-icon-text">ТОП<br>продаж</p>
+		</div>
+            <a class="slide-elm" id="elm-one"></a>
+            <a class="slide-elm" id="elm-two"></a>
+            <a class="slide-elm" id="elm-three"></a>
+            <a class="slide-elm" id="elm-four"></a>
+            <a class="slide-elm" id="elm-five"></a>
+            <a class="slide-elm" id="elm-six"></a>
+            <a class="slide-elm" id="elm-seven"></a>
+            <a class="slide-elm" id="elm-eight"></a>
+        </div>
+            <hr class="bot-lin">
+            <h2>На этой странице представлены авторские работы данного дизайнера</h2>
+        <div class="all-content" id="app">
+                   <div id="btns">
+                        <button class="tap" @click="fwt">Футболка</button>
+                        <button class="tap" @click="fwh">Худи</button>
+                        <button class="tap" @click="fws">Свитшот</button>
+                    </div>
+                    <div id="btns-img">
+                        <img class="tap" src="img/icons8-%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B0-filled-100.png" width="100%" @click="fwt">
+                        <img class="tap" src="img/icons8-%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%B0%D1%8F-%D1%82%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-90.png" width="100%" @click="fwh">
+                        <img class="tap" src="img/icons8-%D0%B4%D0%B6%D0%B5%D0%BC%D0%BF%D0%B5%D1%80-90.png" width="100%" @click="fws">
+                    </div>
+                   <div class="products look">
+                <a href="http://oty-is-v.myprintbar.ru/muzhskiye-futbolki/futbolka-redmob100-2043766/" target="_blank">
+                <img :src="'img/'+fw+'/psiho100-'+fh+'.png'" width="100%">
+                </a>
+                <div class="product-data">
+                    <span class="name">RedMOB100</span>
+                    <span class="coins">{{ coins }} руб.</span>
+                </div>
+            </div>
+            <div class="products look">
+                <a href="http://oty-is-v.myprintbar.ru/muzhskiye-futbolki/futbolka-sg-soraka-my-ward-1648319/" target="_blank">
+                <img :src="'img/'+fw+'/ward-'+fh+'.png'" width="100%">
+                </a>
+                <div class="product-data">
+                    <span class="name">SG Soraka My ward</span>
+                    <span class="coins">{{ coins }} руб.</span>
+                </div>
+            </div>
+            <div class="products look">
+                <a href="http://oty-is-v.myprintbar.ru/muzhskiye-futbolki/futbolka-ice-cream-devil-1975520/" target="_blank">
+                <img :src="'img/'+fw+'/demon-'+fh+'.png'" width="100%">
+                </a>
+                <div class="product-data">
+                    <span class="name">Ice cream devil</span>
+                    <span class="coins">{{ coins }} руб.</span>
+                </div>
+            </div>
+            <div class="products look">
+                <a href="http://oty-is-v.myprintbar.ru/muzhskiye-futbolki/futbolka-goblin-slayer-1903462/" target="_blank">
+                <img :src="'img/'+fw+'/slaer-'+fh+'.png'" width="100%">
+                </a>
+                <div class="product-data">
+                    <span class="name">Goblin Slayer</span>
+                    <span class="coins">{{ coins }} руб.</span>
+                </div>
+            </div>
+            <div class="products look">
+                <a href="http://oty-is-v.myprintbar.ru/muzhskiye-futbolki/futbolka-error-monika-1640133/" target="_blank">
+                <img :src="'img/'+fw+'/doki-'+fh+'.png'" width="100%">
+                </a>
+                <div class="product-data">
+                    <span class="name">Error: Monika</span>
+                    <span class="coins">{{ coins }} руб.</span>
+                </div>
+            </div>
+            <div class="products look">
+                <a href="http://oty-is-v.myprintbar.ru/muzhskiye-futbolki/futbolka-quarterback-1671354/" target="_blank">
+                <img :src="'img/'+fw+'/dark-'+fh+'.png'" width="100%">
+                </a>
+                <div class="product-data">
+                    <span class="name">Quarterback</span>
+                    <span class="coins">{{ coins }} руб.</span>
+                </div>
+            </div>
+            <div class="products look">
+                <a href="http://oty-is-v.myprintbar.ru/muzhskiye-futbolki/futbolka-life-game-1743315/" target="_blank">
+                <img :src="'img/'+fw+'/game-'+fh+'.png'" width="100%">
+                </a>
+                <div class="product-data">
+                    <span class="name">Life Game</span>
+                    <span class="coins">{{ coins }} руб.</span>
+                </div>
+            </div>
+            <div class="products look">
+                <a href="http://oty-is-v.myprintbar.ru/muzhskiye-futbolki/futbolka-error-soraka-1517854/" target="_blank">
+                <img :src="'img/'+fw+'/soraka-'+fh+'.png'" width="100%">
+                </a>
+                <div class="product-data">
+                    <span class="name">Error: Soraka</span>
+                    <span class="coins">{{ coins }} руб.</span>
+                </div>
+            </div>
+            <div class="products look">
+                <a href="http://oty-is-v.myprintbar.ru/muzhskiye-futbolki/futbolka-coffee-kizoku-&-katana-1625440/" target="_blank">
+                <img :src="'img/'+fw+'/aforest-'+fh+'.png'" width="100%">
+                </a>
+                <div class="product-data">
+                    <span class="name">Coffee-kizoku & katana</span>
+                    <span class="coins">{{ coins }} руб.</span>
+                </div>
+            </div>
+        </div>
+        <footer>
+                <div class="payInfo" id="ftr">
+                <p class="payInfo-header">К оплате принимаем</p>
+                <div>
+                    <img alt="" src="http://oty-is-v.myprintbar.ru/public/images/pages/main/payVariants.png">
+                </div>
+                <p>Вы можете оплатить заказ наличными при получении</p>
+            </div>
+            <nav>
+                    <p>Сотрудничество</p>
+                    <a href="https://www.instagram.com/print.ot.y-v">Ежедневно с 08:00 до 20:00</a>
+            </nav>
+            <div class="copyright">
+
+                                <p>© 2019 PRINToty-v</p>
+                <p><a href="https://oty-v.github.io" target="_blank">Разработка сайта</a> oty-v</p>
+                            </div>
+        </footer>
+    <script async src="js/script.js"></script>
+</body>
+</html>
