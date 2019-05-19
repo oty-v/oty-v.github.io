@@ -272,7 +272,7 @@ $('#en').click(function() {
     $(".container-h1-two").html("Information");
     $("#container-h2-one").html("About me");
     $(".container-h2-one").html("About me");
-    $("#container-h3-about h3").html("Hey there<br>My name's Michael. I'm a programmer, engaged in layout, graphics, animation and interaction for sites. I live in Ukraine now. I have been working in the field of web programming since 2018, and currently I'm mostly immersed in javascript / html / css for the external interface. I am always looking for interesting projects.");
+    $("#container-h3-about h4").html("Hey there<br>My name's Michael. I'm a programmer, engaged in layout, graphics, animation and interaction for sites. I live in Ukraine now. I have been working in the field of web programming since 2018, and currently I'm mostly immersed in javascript / html / css for the external interface. I am always looking for interesting projects.");
     $("#container-h3-skills").html("Skills");
     $("#container-h3-progs").html("Tools");
     $("#container-h2-two").html("Services");
@@ -308,7 +308,7 @@ $('#ru').click(function() {
     $(".container-h1-two").html("Информация");
     $("#container-h2-one").html("Обо мне");
     $(".container-h2-one").html("Обо мне");
-    $("#container-h3-about h3").html("Привет всем<br>Меня зовут Михаил. Я программист, занимающийся вёрсткой, графикой, анимацией и взаимодействием для веб-сайтов. В настоящее время я живу в Украине. Я работаю в сфере веб-программирования с 2018 года, и в настоящее время я в основном погружаюсь в JavaScript / HTML / CSS для фронтенд-разработки. Я всегда в поиске интересных проектов.");
+    $("#container-h3-about h4").html("Привет всем<br>Меня зовут Михаил. Я программист, занимающийся вёрсткой, графикой, анимацией и взаимодействием для веб-сайтов. В настоящее время я живу в Украине. Я работаю в сфере веб-программирования с 2018 года, и в настоящее время я в основном погружаюсь в JavaScript / HTML / CSS для фронтенд-разработки. Я всегда в поиске интересных проектов.");
     $("#container-h3-skills").html("Навыки");
     $("#container-h3-progs").html("Инструменты");
     $("#container-h2-two").html("Услуги");
