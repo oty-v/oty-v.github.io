@@ -1379,7 +1379,7 @@ p {
         }
 	to {
 		opacity: 1;
-        z-index: 1;
+        z-index: 999;
         }
     }
     @keyframes change1 {
@@ -1393,7 +1393,7 @@ p {
         }
 	20% {
 		opacity: 1;
-	z-index: 1;
+	z-index: 999;
         }
         30% {
 		opacity: 0;
@@ -1415,7 +1415,7 @@ p {
         }
         40% {
 		opacity: 1;
-	z-index: 1;
+	z-index: 999;
         }
         50% {
 		opacity: 0;
@@ -1437,7 +1437,7 @@ p {
         }
         60% {
 		opacity: 1;
-	z-index: 1;
+	z-index: 999;
         }
         70% {
             opacity: 0;
@@ -1459,7 +1459,7 @@ p {
         }
         80% {
             opacity: 1;
-        z-index: 1;
+        z-index: 999;
         }
 	90% {
 		opacity: 0;
