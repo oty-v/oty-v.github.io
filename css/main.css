@@ -1378,7 +1378,7 @@ height: 4em;
     .contact-five {
     position: absolute;
 width: 90vw;
-margin: 28vh 0 !important;
+margin: 26vh 0 !important;
 }
     .gluch-contact {
         animation: gap 2s infinite cubic-bezier(1.000, 10.000, 0.000, -3.500);
