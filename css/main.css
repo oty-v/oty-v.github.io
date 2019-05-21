@@ -1371,11 +1371,14 @@ p {
         }
 	10% {
 		opacity: 0;
-	z-index: 0;
+	display: block;
+        }
+        15% {
+        display: none;
         }
         90% {
 		opacity: 0;
-	z-index: 0;
+	display: block;
         }
 	to {
 		opacity: 1;
@@ -1385,11 +1388,11 @@ p {
     @keyframes change1 {
 	from {
 		opacity: 0;
-	z-index: 0;
+	display: none;
         }
 	10% {
 		opacity: 0;
-	z-index: 0;
+	display: block;
         }
 	20% {
 		opacity: 1;
@@ -1397,21 +1400,21 @@ p {
         }
         30% {
 		opacity: 0;
-	z-index: 0;
+	display: block;
         }
 	to {
 		opacity: 0;
-        z-index: 0;
+        display: none;
         }
     }
     @keyframes change2 {
 	from {
 		opacity: 0;
-	z-index: 0;
+	display: none;
         }
 	30% {
 		opacity: 0;
-	z-index: 0;
+	display: block;
         }
         40% {
 		opacity: 1;
@@ -1419,21 +1422,21 @@ p {
         }
         50% {
 		opacity: 0;
-	z-index: 0;
+	display: block;
         }
 	to {
 		opacity: 0;
-        z-index: 0;
+        display: none;
         }
     }
     @keyframes change3 {
 	from {
 		opacity: 0;
-	z-index: 0;
+	display: none;
         }
         50% {
 		opacity: 0;
-	z-index: 0;
+	display: block;
         }
         60% {
 		opacity: 1;
@@ -1441,21 +1444,21 @@ p {
         }
         70% {
             opacity: 0;
-        z-index: 0;
+        display: block;
         }
 	to {
 		opacity: 0;
-        z-index: 0;
+        display: none;
         }
     }
     @keyframes change4 {
 	from {
 		opacity: 0;
-	z-index: 0;
+	display: none;
         }
         70% {
 		opacity: 0;
-	z-index: 0;
+	display: block;
         }
         80% {
             opacity: 1;
@@ -1463,11 +1466,11 @@ p {
         }
 	90% {
 		opacity: 0;
-        z-index: 0;
+        display: block;
         }
 	to {
 		opacity: 0;
-        z-index: 0;
+        display: none;
         }
     }
     @keyframes gap {
