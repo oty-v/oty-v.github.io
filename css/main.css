@@ -1349,146 +1349,18 @@ p {
         grid-column: 1/3;
     }
     .contacts {
-    height: 70vw;
-        flex-direction: column;
-    justify-content: start;
+    height: 60vh;
+        display: grid;
+grid-template-columns: 1fr 1fr;
+width: 90vw;
 }
     .contact-all {
-        width: 100vw;
-        height: 50vw;
-        margin: 10vw 0;
-        position: absolute;
+        margin: 10vh 0;
     }
     .gluch-contact {
-    width: 30vw;
-    height: 30vw;
-    margin: 5vw auto;
+    width: 4em;
+height: 4em;
 }
-    @keyframes change0 {
-	from {
-		opacity: 1;
-	display: block;
-        }
-	10% {
-		opacity: 0;
-	display: block;
-        }
-        11% {
-        display: none;
-        }
-        90% {
-		opacity: 0;
-	display: block;
-        }
-	to {
-		opacity: 1;
-        display: block;
-        }
-    }
-    @keyframes change1 {
-	from {
-		opacity: 0;
-	display: none;
-        }
-	10% {
-		opacity: 0;
-	display: block;
-        }
-	20% {
-		opacity: 1;
-	display: block;
-        }
-        30% {
-		opacity: 0;
-	display: block;
-        }
-        31% {
-		opacity: 0;
-        display: none;
-        }
-	to {
-		opacity: 0;
-        display: none;
-        }
-    }
-    @keyframes change2 {
-	from {
-		opacity: 0;
-	display: none;
-        }
-	30% {
-		opacity: 0;
-	display: block;
-        }
-        40% {
-		opacity: 1;
-	display: block;
-        }
-        50% {
-		opacity: 0;
-	display: block;
-        }
-        51% {
-		opacity: 0;
-        display: none;
-        }
-	to {
-		opacity: 0;
-        display: none;
-        }
-    }
-    @keyframes change3 {
-	from {
-		opacity: 0;
-	display: none;
-        }
-        50% {
-		opacity: 0;
-	display: block;
-        }
-        60% {
-		opacity: 1;
-	display: block;
-        }
-        70% {
-            opacity: 0;
-        display: block;
-        }
-        71% {
-		opacity: 0;
-        display: none;
-        }
-	to {
-		opacity: 0;
-        display: none;
-        }
-    }
-    @keyframes change4 {
-	from {
-		opacity: 0;
-	display: none;
-        }
-        70% {
-		opacity: 0;
-	display: block;
-        }
-        80% {
-            opacity: 1;
-        display: block;
-        }
-	90% {
-		opacity: 0;
-        display: block;
-        }
-        91% {
-		opacity: 0;
-        display: none;
-        }
-	to {
-		opacity: 0;
-        display: none;
-        }
-    }
     @keyframes gap {
 	from {
     grid-auto-flow: column;
@@ -1503,20 +1375,10 @@ p {
     grid-gap: 10px;
         }
     }
-    .contact-one a {
-    animation: change0 25s infinite ease-in-out;
-}
-    .contact-two a {
-    animation: change1 25s infinite ease-in-out;
-}
-    .contact-three a {
-    animation: change2 25s infinite ease-in-out;
-}
-    .contact-four a {
-    animation: change3 25s infinite ease-in-out;
-}
-    .contact-five a {
-    animation: change4 25s infinite ease-in-out;
+    .contact-five {
+    position: absolute;
+width: 90vw;
+margin: 28vh 0 !important;
 }
     .gluch-contact {
         animation: gap 2s infinite cubic-bezier(1.000, 10.000, 0.000, -3.500);
