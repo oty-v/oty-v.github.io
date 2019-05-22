@@ -1141,8 +1141,7 @@ p {
     opacity: 1;
     width: 100vw;
     height: 100vh;
-    background:  url(../img/loader.webm) no-repeat center center fixed; 
-    background-size: cover;
+    background:  #050536;
     overflow: hidden;
     z-index: 9999;
 }
