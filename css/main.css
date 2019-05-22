@@ -96,36 +96,14 @@ a:active {
 
 @keyframes bounce_fountainTextG{
 	0%{
-		transform:scale(1);
+		-webkit-transform:scale(1);
+		        transform:scale(1);
 		color:rgb(255,255,255);
 	}
 
 	100%{
-		transform:scale(.5);
-		color:rgba(255,255,255,0);
-	}
-}
-
-@-o-keyframes bounce_fountainTextG{
-	0%{
-		-o-transform:scale(1);
-		color:rgb(255,255,255);
-	}
-
-	100%{
-		-o-transform:scale(.5);
-		color:rgba(255,255,255,0);
-	}
-}
-
-@-ms-keyframes bounce_fountainTextG{
-	0%{
-		-ms-transform:scale(1);
-		color:rgb(255,255,255);
-	}
-
-	100%{
-		-ms-transform:scale(.5);
+		-webkit-transform:scale(.5);
+		        transform:scale(.5);
 		color:rgba(255,255,255,0);
 	}
 }
@@ -138,18 +116,6 @@ a:active {
 
 	100%{
 		-webkit-transform:scale(.5);
-		color:rgba(255,255,255,0);
-	}
-}
-
-@-moz-keyframes bounce_fountainTextG{
-	0%{
-		-moz-transform:scale(1);
-		color:rgb(255,255,255);
-	}
-
-	100%{
-		-moz-transform:scale(.5);
 		color:rgba(255,255,255,0);
 	}
 }
@@ -1190,14 +1156,19 @@ p {
     .lang {
     margin: 3vh auto;
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     right: auto;
     bottom: 0;
 }
     .nav {
     height: auto;
         top:0;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 }
     .close-nav{
         top: -40vh;
@@ -1240,7 +1211,9 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-transform-origin: left;
     -ms-transform-origin: left;
     transform-origin: left;
@@ -1346,11 +1319,15 @@ p {
     font-size: 3vw!important;
 }
     #functional-last {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
         grid-column: 1/3;
     }
     .contacts {
     height: 60vh;
+        display: -ms-grid;
         display: grid;
+-ms-grid-columns: 1fr 1fr;
 grid-template-columns: 1fr 1fr;
 width: 90vw;
 }
@@ -1361,6 +1338,20 @@ width: 90vw;
     width: 4em;
 height: 4em;
 }
+    @-webkit-keyframes gap {
+	from {
+    grid-auto-flow: column;
+    grid-gap: 10px;
+        }
+	50% {
+    grid-auto-flow: row;
+    grid-gap: 0;
+        }
+	to {
+    grid-auto-flow: column;
+    grid-gap: 10px;
+        }
+    }
     @keyframes gap {
 	from {
     grid-auto-flow: column;
@@ -1381,10 +1372,13 @@ width: 90vw;
 margin: 26vh 0 !important;
 }
     .gluch-contact {
-        animation: gap 2s infinite cubic-bezier(1.000, 10.000, 0.000, -3.500);
+        -webkit-animation: gap 2s infinite cubic-bezier(1.000, 10.000, 0.000, -3.500);
+                animation: gap 2s infinite cubic-bezier(1.000, 10.000, 0.000, -3.500);
     }
     .my-info {
-    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
     #fountainTextG{
 	width:100vw;
