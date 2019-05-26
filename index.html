@@ -297,7 +297,14 @@
 			</div>
 		</div>
 	</div>
-	<script async src="js/script.js">
+	<script>
+		$(window).on('load', setTimeout(function() {
+			$('.loader').addClass('hide-loader');
+			$('.fountainTextG').addClass('hide-txt');
+			$('#container-h1-zero').addClass('hide-txt');
+		}, 3000));
+	</script>
+	<script defer src="js/script.js">
 	</script>
 </body>
 </html>
