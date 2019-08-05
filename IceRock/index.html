@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Ice Rock</title>
+  	<meta content="Mikhail Ostrovsky" name="Author">
+  	<meta content="oty998@gmail.com" name="Reply-to">
+  	<meta content="Заказ на вёрстку страницы со слайдером на Vue.js" name="description">
+  	<meta content="Заказ на вёрстку" name="Keywords">
+  	<link href="img/Path.png" rel="icon" type="image/png">
+  	<link href="css/main.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  	<script async src="js/script.js"></script>
+</head>
+<body>
+            <div id="side-bar">
+                    <div id="logo">
+                        <img class="path" src="./img/Path.png">
+                        <img class="ice-rock" src="./img/Ice%20Rock.png">
+                    </div>
+                    <nav>
+                        <a>диспетчерская</a>
+                        <a class="activated">купить мощность</a>
+                        <a>партнёрская программа</a>
+                        <a>история</a>
+                        <a>настройка</a>
+                        <a>поддержка</a>
+                    </nav>
+                    <div id="social">
+                        <a><img src="img/facebook_icon.png"></a>
+                        <a><img src="img/twitter_icon.png"></a>
+                        <a><img src="img/instagram_icon.png"></a>
+                        <a><img src="img/telegram_icon.png"></a>
+                        <a><img src="img/language.png"></a>
+                    </div>
+            </div>
+            <div class="container">
+                <header>
+                    <h1>купить мощность</h1>
+                    <div id="log-in">
+                        <button class="rectangle">berkindlat@gmail.com</button>
+                        <button class="exit">выход</button>
+                    </div>
+                </header>
+                <div class="content">
+                    <h2>antminer</h2>
+                    <div id="calculator">
+                        <h3>доступно rockhash к продаже</h3>
+                        <img id="rochash-inf" src="./img/Shape.png">
+                        <p id="rochash">14329053 (RH)</p>
+                        <div class="oval">
+                            <div id="oval"></div>
+                            <p id="oval-text">1 RH = 1Gh/s</p>
+                            <img id="rochash-inf" src="./img/Shape.png">
+                        </div>
+                        <div id="cltr-slider">
+                           <div id="power">
+                                <span>мощность</span>
+                                <input type="number" placeholder="0" min="0" max="9999" maxlength="4" id="rh" v-model="rh">
+                                <p id="in-gh">500Gh/s</p>
+                            </div>
+                            <div id="equality">=</div>
+                            <div id="cost">
+                                <span>стоимость</span>
+                                <input id="money" v-model="(rh*6.36102).toFixed(2)" disabled>
+                            </div>
+                            <div id="slider">
+                                <input type="range" min="0" max="9999" step="1" id="size" oninput="range()" v-model="rh" class="range"
+                                v-bind:style="{'background-image': ['-webkit-linear-gradient(left, rgb(251,163,97) 0% ,rgb(251,97,226)'+rh/100+'% , rgb(226, 230, 235)'+rh/100+'% , rgb(226, 230, 235) 100%)', '-ms-linear-gradient(left, rgb(251,163,97) 0% ,rgb(251,97,226)'+rh/100+'% , rgb(226, 230, 235)'+rh/100+'% , rgb(226, 230, 235) 100%)', '-moz-linear-gradient(left, rgb(251,163,97) 0% ,rgb(251,97,226)'+rh/100+'% , rgb(226, 230, 235)'+rh/100+'% , rgb(226, 230, 235) 100%)']}" >
+                            </div>
+                            <button class="next">продолжить</button>
+                        </div>
+                    </div>
+                    <p class="payment">мы принимаем к оплате</p>
+                    <div class="payment-cont">
+                        <img class="currency" src="img/BShape.png">
+                        <img class="currency" src="img/Group.png">
+                        <img class="currency" src="img/litecoin.png">
+                        <img class="currency" src="img/BCShape.png">
+                        <img class="currency" src="img/TShape.png">
+                    </div>
+                    </div>
+                <div class="footer">© 2019 ice rock mining</div>
+            </div>
+</body>
+</html>
