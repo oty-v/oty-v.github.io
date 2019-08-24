@@ -1,0 +1,199 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    width: 102px;
+    height: 100px;
+}
+
+nav {
+    text-align: center;
+    padding-top: 29px;
+}
+
+.container {
+    margin: 11px 7vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#call {
+    padding-top: 16px;
+    display: flex;
+}
+
+nav a {
+    margin-left: 35px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    line-height: 142.2%;
+    text-decoration: none;
+    color: #000000;
+}
+
+#call p {
+    display: inline-block;
+    margin: 14px 0 0 28px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    vertical-align:top;
+    white-space: nowrap;
+}
+
+#call svg {
+    border: 14px solid #F1F1F1;
+    border-radius: 7px;
+}
+
+.content {
+    display: flex;
+}
+
+.content-img {
+    height: 74vh;
+    margin: 0 0 0 8vw;
+}
+
+img {
+    height: 100%;
+}
+
+.content-txt {
+    margin-top: 7vh;
+}
+
+.content-txt span {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+h1 {
+    margin: 13px 0 32px 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.content-txt p {
+    width: 42vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+form {
+    margin: 6vh 0 1vh 0;
+}
+
+#form-txt {
+    background: #F1F1F1;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 10vw 10px 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+#form-btn {
+    background: #FF8324;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.adv {
+    width: 25px;
+    height: 25px;
+    border: 11px solid #F1F1F1;
+    background: #F1F1F1;
+    border-radius: 7px;
+}
+
+.cont {
+    width: 16px;
+    height: 16px;
+    border: 11px solid #000000;
+    background: #000000;
+    border-radius: 100px;
+    margin-left: 1vw;
+}
+
+.rest {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages p {
+    margin: 5px 3vw 5px 1vw;
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+@media screen and (orientation: portrait){
+.content-img {
+    height: 44vh;
+    margin: 0;
+}
+}
+@media screen and (orientation: portrait) and (max-device-width: 767px){
+    .content-img {
+    display: none;
+}
+    nav {
+    display: none;
+}
+    #call p {
+    display: none;
+}
+    .advantages {
+    display: none;
+}
+    #logo {
+    width: 63px;
+    height: 62px;
+}
+    .content {
+    justify-content: center;
+        text-align: center;
+}
+    .content-txt p {
+    width: 100%;
+}
+    form {
+        display: flex;
+        flex-flow: column;
+    margin: 4vh 0 1vh 0;
+}
+    .rest {
+    justify-content: center;
+}
+}
