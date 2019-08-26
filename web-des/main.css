@@ -6,11 +6,16 @@ html, body{
 #logo {
     width: 102px;
     height: 100px;
+    animation: logo 1s ease-in-out 0s 1;
 }
 
+.logo-bg {
+    animation: logo-bg .8s ease-in-out 0s 1;
+}
 nav {
     text-align: center;
     padding-top: 29px;
+    animation: nav 1.5s ease-in-out 0s 1;
 }
 
 .container {
@@ -25,6 +30,7 @@ header {
 #call {
     padding-top: 16px;
     display: flex;
+    animation: call 2.5s ease-in-out 0s 1;
 }
 
 nav a {
@@ -57,6 +63,7 @@ nav a {
 .content-img {
     height: 74vh;
     margin: 0 0 0 8vw;
+    animation: content-img 2s ease-in-out 0s;
 }
 
 img {
@@ -65,6 +72,7 @@ img {
 
 .content-txt {
     margin-top: 7vh;
+    animation: content-txt 2.5s ease-in-out 0s;
 }
 
 .content-txt span {
@@ -91,6 +99,9 @@ h1 {
 
 form {
     margin: 6vh 0 1vh 0;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
 }
 
 #form-txt {
@@ -134,6 +145,7 @@ form {
 .rest {
     display: flex;
     justify-content: space-between;
+    animation: rest 2.5s ease-in-out 0s;
 }
 
 .advantages {
@@ -158,6 +170,126 @@ form {
     font-size: 16px;
     line-height: 19px;
 }
+@keyframes logo{
+    0% {
+        position: fixed;
+    margin: 25vh 25vw;
+    width: 30vw;
+    height: 50vh;
+  }
+  80% {
+        position: fixed;
+    margin: 25vh 25vw;
+    width: 30vw;
+    height: 50vh;
+  }
+  84% {
+        position: fixed;
+    margin: 20vh 20vw;
+    width: 25vw;
+    height: 45vh;
+  }
+  88% {
+        position: fixed;
+    margin: 15vh 15vw;
+    width: 20vw;
+    height: 40vh;
+  }
+  92% {
+        position: fixed;
+    margin: 10vh 10vw;
+    width: 15vw;
+    height: 35vh;
+  }
+  96% {
+        position: fixed;
+    margin: 5vh 5vw;
+    width: 10vw;
+    height: 30vh;
+  }
+  100% {
+      margin: auto;
+    width: auto;
+    height: auto;
+  }
+}
+@keyframes logo-bg{
+    0% {
+        opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@keyframes nav{
+    0% {
+            margin-top:-20vh;
+  }
+    50% {
+            margin-top:-20vh;
+  }
+  100% {
+      margin-top: 0;
+  }
+}
+@keyframes call{
+    0% {
+        overflow: hidden;
+        width: 0;
+  }
+    50% {
+        overflow: hidden;
+        width: 0;
+  }
+    95% {
+        overflow: hidden;
+        width: 15vw;
+  }
+  100% {
+      width: auto;
+  }
+}
+@keyframes content-txt{
+    0% {
+        opacity: 0;
+  }
+    50% {
+        opacity: 0;
+  }
+    100% {
+        opacity: 1;
+  }
+}
+@keyframes content-img{
+    0% {
+        overflow: hidden;
+        width: 0;
+        margin: 0 0 0 50vw;
+  }
+    50% {
+        overflow: hidden;
+        width: 0;
+        margin: 0 0 0 50vw;
+  }
+  100% {
+      margin: 0 0 0 8vw;
+  }
+}
+@keyframes rest{
+    0% {
+        overflow: hidden;
+        height: 0;
+        margin: 20vw 0 0 0;
+  }
+    50% {
+        overflow: hidden;
+        height: 0;
+        margin: 20vw 0 0 0;
+  }
+  100% {
+      margin: 0;
+  }
+}
 @media screen and (orientation: portrait){
 .content-img {
     height: 44vh;
@@ -170,6 +302,7 @@ form {
 }
     nav {
     display: none;
+    animation: none;
 }
     #call p {
     display: none;
@@ -180,6 +313,7 @@ form {
     #logo {
     width: 19vw;
     height: 19vw;
+    animation: none;
 }
     .content {
     justify-content: center;
@@ -195,6 +329,7 @@ form {
 }
     .rest {
     justify-content: center;
+        animation: none;
 }
     #call svg {
     border: 5vw solid #F1F1F1;
@@ -213,6 +348,7 @@ form {
     h1 {
     font-weight: 800;
     font-size: 7rem;
+    line-height: normal;
 }
     #form-txt {
     border-radius: 20px;
@@ -231,5 +367,23 @@ form {
     height: 6vw;
     border: 4vw solid #000000;
     margin: 6vw 3vw;
+}
+    
+#call {
+    animation: none;
+}
+
+.content-txt {
+    animation: none;
+}
+
+.content-img {
+    animation: none;
+}
+.logo-bg {
+    animation: none;
+}
+    .container {
+    margin: 3vh 7vw;
 }
 }
